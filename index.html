@@ -21,8 +21,8 @@
             100% { background-color: blue; }
         }
         h1 {
-            font-family: "Comic Sans MS", cursive, sans-serif;
-            font-size: 182px; /* Mantiene la grandezza aumentata */
+            font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+            font-size: 182px; /* Mantiene la grandezza per desktop */
             color: black;
             position: absolute;
             top: -5%; /* Alzato di altri 50px rispetto alla precedente posizione */
@@ -50,7 +50,8 @@
         /* Ottimizzazione per mobile */
         @media (max-width: 768px) {
             h1 {
-                font-size: 80px; /* Ridotta per schermi più piccoli */
+                font-size: 64px; /* Ridotta del 20% rispetto ai 80px precedenti */
+                font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif; /* Aggiunto supporto per mobile */
                 top: 5%; /* Regolata per migliore visibilità */
             }
             img {
